@@ -1,0 +1,199 @@
+:root {
+  /* Colors */
+  --dark-blue: #254f87;
+  --dark-gray: #21262c;
+  --purple: #5a14ff;
+
+  /* Font Sizes */
+  --fs-100: 0.75rem; /* 12px */
+  --fs-200: 0.875rem; /* 14px */
+  --fs-300: 1.125rem; /* 18px */
+  --fs-400: 1.5rem; /* 24px */
+  --fs-500: 2rem; /* 32px */
+  --fs-600: 2.5rem; /* 40px */
+  --fs-700: 3rem; /* 48px */
+  --fs-900: 4rem; /* 64px */
+
+  /* Font Weights */
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  /* Drop Shadow */
+  --box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+
+  /* Linear gradient */
+  --black-gradient: 0deg, black, rgba(0, 0, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+  color: white;
+}
+
+/* Nav Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.links,
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-gray);
+  width: var(--fs-600);
+  height: var(--fs-600);
+  border-radius: 7px;
+}
+
+.logo h1,
+.links p {
+  color: var(--dark-gray);
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: var(--dark-blue);
+  width: 120px;
+  height: 45px;
+  border-radius: 6px;
+  box-shadow: var(--box-shadow);
+}
+
+.button:hover {
+  background-color: cornflowerblue;
+}
+
+/* Illuminate Your Workflow */
+
+.hero {
+  height: 300px;
+  background-image: linear-gradient(var(--black-gradient)),
+    url("images/People\ at\ Desk.jpg");
+  background-position: center;
+  background-size: 130%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-heading {
+  font-size: var(--fs-900);
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 35px 50px;
+}
+
+.features div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  padding: 20px 30px;
+  border-radius: 20px;
+  width: 290px;
+  height: 190px;
+  gap: 17px;
+}
+
+.features i {
+  font-size: 45px;
+}
+
+.features p {
+  color: var(--dark-gray);
+  font-size: var(--fs-200);
+}
+
+.features .fw-bold {
+  font-size: var(--fs-300);
+}
+
+.fa-solid {
+  color: var(--dark-blue);
+}
+
+/* Testimonial */
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(var(--black-gradient)),
+    url(images/Skyline2.jpg);
+  background-size: 120%;
+  background-position: center;
+  height: 288px;
+  gap: 14px;
+}
+
+/* Page Two */
+
+
+
+/* Utility */
+
+.fs-100 {
+  font-size: var(--fs-100);
+} /* 12px */
+.fs-200 {
+  font-size: var(--fs-200);
+} /* 14px */
+.fs-300 {
+  font-size: var(--fs-300);
+} /* 18px */
+.fs-400 {
+  font-size: var(--fs-400);
+} /* 24px */
+.fs-500 {
+  font-size: var(--fs-500);
+} /* 32px */
+.fs-600 {
+  font-size: var(--fs-600);
+} /* 40px */
+.fs-700 {
+  font-size: var(--fs-700);
+} /* 48px */
+.fs-900 {
+  font-size: var(--fs-900);
+} /* 64px */
+
+.fw-regular {
+  font-weight: var(--fw-400);
+}
+
+.fw-semibold {
+  font-weight: var(--fw-600);
+}
+
+.fw-bold {
+  font-weight: var(--fw-700);
+}
