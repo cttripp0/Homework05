@@ -64,6 +64,13 @@
   box-shadow: var(--box-shadow);
 }
 
+.button:hover {
+  background-color: cornflowerblue;
+}
+
+a{
+  text-decoration: none;
+}
 /* Portfolio */
 
 .portfolio {
@@ -73,8 +80,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(90deg, black, white);
+  background-image: linear-gradient(90deg, black, #666075);
 }
+
+.portfolio-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: left;
+  row-gap: 10px;
+}
+
 .text {
   display: flex;
   flex-direction: column;
@@ -132,6 +147,36 @@
 .project-six {
   background-image: url(images/Mural.jpg);
 }
+
+/* Testimonials */
+.testimonials {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.63), #2c136962),
+    url(images/Waterfall.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 414px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 5rem;
+}
+
+.testimonials .italic {
+  font-size: 0.875rem;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  width: 245px;
+  height: 146px;
+  background-color: rgba(63, 63, 63, 0.5);
+  backdrop-filter: var(--background-blur);
+  border-radius: 5px;
+  padding: 1rem;
+}
 /* Utility */
 
 .fs-100 {
@@ -169,4 +214,8 @@
 
 .fw-bold {
   font-weight: var(--fw-700);
+}
+
+.italic {
+  font-style: italic;
 }
